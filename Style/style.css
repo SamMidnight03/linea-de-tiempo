@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Fondo-Oscuro: url('./img/Fondo\ modo\ oscuro.jpg');
+    --Letra-Oscuro: #ffff;
+}
+
+body{
+    background: var(--Fondo-Oscuro)center no-repeat;
+    color: var(--Letra-Oscuro);
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin: 0.5%;
+}
+
+header h1{
+    padding: 0.5%;
+}
+
+nav button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title img{
+    width: 30px;
+}
+
+#item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+#item:not(:last-child)::before{
+    content: "";
+    display: block;
+
+    background-color: white;
+    width: 3px;
+    position: absolute;
+    top: 20px;
+    height: 100%;
+    left: 48.7px;
+}
+
+.dot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 10px 0;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+
+
+#item button{
+    background-color: transparent;
+    border: 0;
+}
+
+
+.text{
+    /* margin-left: 65px;
+    max-height: 0;
+    display: none;
+    */
+
+    opacity: 0;
+    max-height: 0px;
+    
+    transition: opacity 0.2s ease-out, max-height 0.6s ease-in-out;
+    
+    border-radius: 8px;
+    
+    padding: 0 10px;
+    margin-left: 65px;
+
+    overflow: hidden;
+
+    background-color: aqua;
+    
+}
+
+#item:has(button.expand) .text{
+    opacity: 1;
+    max-height: 100vh;
+    display: block;
+    background-color: rgb(149, 27, 27);
+}
+
+button.expand img{
+    transform: rotateZ(90deg);
+}

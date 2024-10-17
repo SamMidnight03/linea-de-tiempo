@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>Linea de tiempo</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Nuestra historia</h1>
+            <br>
+                <nav>
+                    <button onclick="expandAll()">Abrir todos</button>
+                    <button onclick="collapseAl()">Cerrar todos</button>
+                </nav>
+        </header>
+
+        <section>
+
+            
+    
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)" ><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Marzo 20</span>
+                        <strong>Se mando la salchipapa</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    salimos a comer
+                </div>
+            </div>
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)" ><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Marzo 21</span>
+                        <strong>Primera foto</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    primera vez que le tome una foto para hablar de el con mmis amigas
+                </div>
+            </div>
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)" ><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Marzo 22</span>
+                        <strong>Primera vez solos</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    primera vez que estuvios solos en casa 
+                </div>
+            </div>
+    
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)"><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Marzo 25</span>
+                        <strong>Primer visita</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    fue por primera vez a mi casa, estuvimos jugando y escuchando musica         
+                </div>
+            </div>
+    
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)"><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Abril 6</span>
+                        <strong>La gran mentira</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    solo se dijo
+                </div>
+            </div>
+    
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)"><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Abril 25</span>
+                        <strong>Primera cita</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    Salimos juntos por primera vez al viva a molestar
+                </div>
+            </div>
+    
+            <div id="item">
+                <div class="title">
+                    <button onclick="toggleItem(this)"><img src="./Style/img/flecha.png" alt=""></button>
+                    <span class="dot"></span>
+                    <span class="tittle">
+                        <span class="Date">Mayo 5 </span>
+                        <strong>Conoce a mis papas</strong>
+                    </span>
+                </div>
+                <div class="text">
+                    Fue a mi casa y conocio al resto de mi familia 
+                </div>
+            </div>
+    
+        </section>
+    </main>
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
